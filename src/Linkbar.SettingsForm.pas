@@ -28,10 +28,6 @@ type
     cbbTextLayout: TComboBox;
     chbAutoHide: TCheckBox;
     lblVer: TLabel;
-    lblEmail: TLabel;
-    linkEmail: TLinkLabel;
-    linkWeb: TLinkLabel;
-    lblWeb: TLabel;
     lblSystemInfo: TLabel;
     chbAutoHideTransparency: TCheckBox;
     cbbScreenPosition: TComboBox;
@@ -100,8 +96,6 @@ type
     Bevel2: TBevel;
     nseCorner1GapWidth: TnSpinEdit;
     nseCorner2GapWidth: TnSpinEdit;
-    lblGithub: TLabel;
-    linkGithub: TLinkLabel;
     pnlTransparencyMode: TPanel;
     lblTransparencyMode: TLabel;
     cbbTransparencyMode: TComboBox;
@@ -123,10 +117,6 @@ type
     pnlTooltipShow: TPanel;
     procedure FormMouseWheel(Sender: TObject; Shift: TShiftState;
       WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
-    procedure linkEmailLinkClick(Sender: TObject; const Link: string;
-      LinkType: TSysLinkType);
-    procedure linkWebLinkClick(Sender: TObject; const Link: string;
-      LinkType: TSysLinkType);
     procedure DialogButtonClick(Sender: TObject);
     procedure Changed(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -402,11 +392,6 @@ begin
   chbAeroGlass.Checked := FLinkbar.EnableAeroGlass;
 
   lblVer.Caption     := Format(lblVer.Caption, [VersionToString]);
-  linkWeb.Caption    := '<a>' + URL_WEB + '</a>';
-  linkEmail.Caption  := '<a>' + URL_EMAIL + '</a>';
-  linkGithub.Caption := '<a>' + URL_GITHUB + '</a>';
-  linkEmail.Left := linkGithub.Left;
-  linkWeb.Left := linkGithub.Left;
 
   lblSysInfo.Caption := SystemInfo;
 
@@ -518,23 +503,6 @@ end;
 procedure TFrmProperties.imCopyClick(Sender: TObject);
 begin
   Clipboard.AsText := lblSysInfo.Caption;
-end;
-
-procedure TFrmProperties.linkEmailLinkClick(Sender: TObject; const Link: string;
-  LinkType: TSysLinkType);
-begin
-  if not SendShellEmail(Application.Handle, URL_EMAIL,
-    APP_NAME_LINKBAR,
-    lblVer.Caption
-    + '%0D%0A' + 'OS: ' + lblSysInfo.Caption)
-  then begin
-  end;
-end;
-
-procedure TFrmProperties.linkWebLinkClick(Sender: TObject; const Link: string;
-  LinkType: TSysLinkType);
-begin
-  LBShellExecute(0, 'open', URL_WEB);
 end;
 
 procedure TFrmProperties.Changed(Sender: TObject);

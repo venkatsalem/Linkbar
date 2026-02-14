@@ -40,7 +40,7 @@ uses
   procedure SHDeleteOp(AWnd: HWND; APath: string; AAllowUndo: Boolean);
   function SHRaname(AWnd: HWND; APidl: PItemIDList; const ARenameText: string): HRESULT;
 
-  function SendShellEmail(AWnd: HWND; ARecipientEmail, ASubject, ABody: string): boolean;
+
 
   function RegisterBitBucketNotify(AWnd: HWND; AMessage: Cardinal): Cardinal;
   procedure UnregisterBitBucketNotify(ANotify: Cardinal);
@@ -224,7 +224,6 @@ begin
     ExecInfo.nShow := AShowCmd;
     ExecInfo.fMask := SEE_MASK_NOASYNC;
     {$IFDEF UNICODE}
-    // http://www.transl-gunsmoker.ru/2015/01/what-does-SEEMASKUNICODE-flag-in-ShellExecuteEx-actually-do.html
     ExecInfo.fMask := ExecInfo.fMask or SEE_MASK_UNICODE;
     {$ENDIF}
     Win32Check(ShellExecuteEx(@ExecInfo));
@@ -317,21 +316,7 @@ begin
   end;
 end;
 
-function SendShellEmail(AWnd: HWND; ARecipientEmail, ASubject, ABody: string): boolean;
-// Send an email to this recipient with a subject and a body
-var
-  iResult: integer;
-  s : string;
-begin
-  if (Trim(ARecipientEmail) = '')
-  then ARecipientEmail := 'mail';
-  s := 'mailto:' + ARecipientEmail;
-  s := s + '?subject=' + ASubject;
-  if (Trim(ABody) <> '')
-  then s := s + '&body=' + ABody;
-  iResult := ShellExecute(0, 'open', PChar(s), nil, nil, SW_SHOWNORMAL);
-  Result := (iResult > 0);
-end;
+
 
 function RegisterBitBucketNotify(AWnd: HWND; AMessage: Cardinal): Cardinal;
 var pidl: PItemIDList;

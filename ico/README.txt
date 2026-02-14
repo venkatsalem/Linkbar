@@ -1,1 +1,1 @@
-Ico file size reduced by http://x128.ho.ua/color-quantizer.html
+Icon file optimized for reduced size.

@@ -36,10 +36,6 @@ const
 
   APP_ID_LINKBAR  = '991E87F9787C468E8594072D75A476C7';
   APP_NAME_LINKBAR = 'Linkbar';
-  URL_WEB = 'https://sourceforge.net/projects/linkbar/';
-  URL_EMAIL = 'linkbar@yandex.ru';
-  URL_GITHUB = 'https://github.com/ATGH15102AFMLD/Linkbar';
-  URL_WINDOWS_HOTKEY = 'https://support.microsoft.com/en-ie/help/12445/windows-keyboard-shortcuts';
 
   // Supported extentions
   ES_ARRAY: array[0..2] of string = ('.lnk', '.url', '.website');

@@ -997,20 +997,6 @@ object FrmProperties: TFrmProperties
         Alignment = taCenter
         Caption = 'Version:'
       end
-      object lblEmail: TLabel
-        Left = 8
-        Top = 36
-        Width = 35
-        Height = 14
-        Caption = 'e-mail:'
-      end
-      object lblWeb: TLabel
-        Left = 8
-        Top = 56
-        Width = 28
-        Height = 14
-        Caption = 'web:'
-      end
       object lblSystemInfo: TLabel
         Left = 8
         Top = 132
@@ -1035,43 +1021,6 @@ object FrmProperties: TFrmProperties
         Caption = 'lblSysInfo'#13#10'1'#13#10'2'#13#10'3'#13#10'4'
         WordWrap = True
         ExplicitWidth = 372
-      end
-      object lblGithub: TLabel
-        Left = 8
-        Top = 76
-        Width = 41
-        Height = 14
-        Caption = 'GitHub:'
-      end
-      object linkEmail: TLinkLabel
-        Left = 46
-        Top = 36
-        Width = 69
-        Height = 18
-        Caption = '<a href="">linkbar email</a>'
-        TabOrder = 0
-        TabStop = True
-        OnLinkClick = linkEmailLinkClick
-      end
-      object linkWeb: TLinkLabel
-        Left = 39
-        Top = 56
-        Width = 93
-        Height = 18
-        Caption = '<a href="">linkbar webpage</a>'
-        TabOrder = 1
-        TabStop = True
-        OnLinkClick = linkWebLinkClick
-      end
-      object linkGithub: TLinkLabel
-        Left = 52
-        Top = 76
-        Width = 77
-        Height = 18
-        Caption = '<a href="">linkbar github</a>'
-        TabOrder = 2
-        TabStop = True
-        OnLinkClick = linkWebLinkClick
       end
     end
   end

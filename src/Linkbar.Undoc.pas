@@ -49,8 +49,6 @@ type
 
   TDwmGetColorizationParameters = function(out parameters: TColorizationParams): HRESULT; stdcall;
 
-  // http://a-whiter.livejournal.com/1385.html
-  // http://undoc.airesoft.co.uk/user32.dll/SetWindowCompositionAttribute.php
   tagWCADATA = packed record
     dwAttribute: NativeUInt;     // the attribute to query, see below
     pvAttribute: Pointer;        // buffer to store the result

@@ -307,7 +307,6 @@ var wcad: TWcaData;
     AccentPolicy: TWcaAccentPolicy;
 begin
   // Set window accent policy
-  // https://withinrafael.com/2015/07/08/adding-the-aero-glass-blur-to-your-windows-10-apps/
   if Assigned(UDwmSetWindowCompositionAttributeProc)
   then begin
     wcad.dwAttribute := U_WCA_ACCENT_POLICY;
@@ -362,8 +361,6 @@ begin
   if (IsWindows8And8Dot1 and not GlobalAeroGlassEnabled)
   then Exit;
 
-  // http://a-whiter.livejournal.com/1385.html
-  // http://a-whiter.livejournal.com/2495.html
   // Set non-client rendering policy
   bPolicy1 := True;
   DwmSetWindowAttribute(AWnd, DWMWA_NCRENDERING_POLICY, @bPolicy1, SizeOf(bPolicy1));

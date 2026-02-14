@@ -1,4 +1,4 @@
-﻿Linkbar - Windows desktop toolbar
+Linkbar - Windows desktop toolbar
 
 Linkbar will come in handy for users that need more than one taskbar on their desktop.
 The application is totally customizable, from Icon size, padding or position on the screen. 
@@ -10,14 +10,13 @@ Note:
 
 Version: 1.6.9
 License type: Freeware
-OS: Windows Vista/7/8/8.1/10
+OS: Windows Vista/7/8/8.1/10/11
 Languages: English (default), Brazilian, Сhinese-Simplified, French, Indonesian, Italian, German, Greek, Japanese, Korean, Polish, Russian, Spanish, localization support
-Email: linkbar@yandex.ru (use English or Russian)
 
-===============================================================================
+===============================================================================================
 
 == Special thanks
-===============================================================================
+===============================================================================================
 
 - A_whiter sad blog
 - Classic Shell
@@ -31,30 +30,10 @@ Email: linkbar@yandex.ru (use English or Russian)
 - StartIsBack
 - Unknown programmers from internet
 
-===============================================================================
-
-== Links
-===============================================================================
-
-- Source code: 
-	https://github.com/ATGH15102AFMLD/Linkbar
-
-- Project page on Sourceforge: 
-	https://sourceforge.net/projects/linkbar/
-
-- Page Japanese:
-	http://all-freesoft.net/desktop11/launcher/linkbar/linkbar.html
-
-- Russian community on Ru-Board: 
-	http://forum.ru-board.com/topic.cgi?forum=62&topic=18490
-
-- Page on Softpedia: 
-	http://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Linkbar.shtml
-
-===============================================================================
+===============================================================================================
 
 == History
-===============================================================================
+===============================================================================================
 
 == TODO:
 
@@ -65,7 +44,7 @@ add: For Windows 10 support high contrast theme for panel and Jumplist
 add: Drag&Drop in Jumplists
 add: Shield for shortcut with flag "Run as Administrator" (Properties - Shortcut - Advanced)
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.9 general release (Jan, 2021):
 
@@ -89,7 +68,7 @@ fix: Linkbar opening on wrong screen in multi-monitor setup
 fix: Exception while Drag&Drop when system style services disabled
 fix: Cannot open context menu (e.g. Windows 10 Calculator)
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.8 general release (Mar, 2018):
 
@@ -108,7 +87,7 @@ fix: Error "Argument out of range" while remove last item
 fix: Losed some graphics in Jumplists on Windows 8
 fix: In the settings, mouse wheel change a spinedit value on more than 1 step
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.7 general release (Dec, 2017):
 
@@ -128,7 +107,7 @@ fix: Exception on closing if the Properties is open
 fix: Multiple separators in Shell menu (e.g. for a shortcut to an HTML-file)
 fix: Incorrect behavior in negative desktop coordinates
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.6 general release (Feb, 2017):
 
@@ -141,7 +120,7 @@ fix: Exception "Invalid floating point operation"
 fix: Incorrect loading sequence of shortcuts
 fix: Incorrect reading from the registry Jumplist size
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.5 general release (Feb, 2016):
 
@@ -161,7 +140,7 @@ fix: Exception when dragging a linkbar on systems with multi monitors
 fix: Panel not change size when display resolution changes
 fix: Exception when multiple display settings changes
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.4 general release (Sep, 2015):
 
@@ -173,7 +152,7 @@ fix: Unable to rename a file by changing the case of letters (e.g. big to BIG)
 fix: Through dialog "New linkbar" created not translated linkbars
 fix: 32-bit Linkbar can't translate to system language
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.3 experimental (Sep, 2015):
 
@@ -186,7 +165,7 @@ add: Dialog "Renaming"
 add: Some bug fixes and improvements
 fix: Some items may have non-localized names (e.g. from Administrative tools)
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.2 general release (May, 2015):
 
@@ -198,7 +177,7 @@ add: New option in "Properties" dialog. Use same texture as the Taskbar with com
 add: Changes in "New linkbar" dialog. Removed profile name
 add: "Delete working directory" option in "Delete linkbar" dialog
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.1 experimental (Apr, 2015):
 
@@ -217,14 +196,14 @@ add: Changes in "Properties" dialog
 fix: Some items are not available in the context menu ("Open with" and others)
 fix: In Themes Classic and Contrast pressed button was black 
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.0.2 general release (Feb, 2015):
 
 add: Japanese localization (Takahiro)
 fix: Fonts
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.0.1 general release (Feb, 2015):
 
@@ -233,7 +212,7 @@ add: English localization (Asaq)
 fix: Move application to background process
 fix: F11 mode
 
-===============================================================================
+===============================================================================================
 
 == Version 1.6.0 general release (Feb, 2015):
 
@@ -249,7 +228,7 @@ add: DPI-Aware
 add: In hidden state visible on 2 pixels (as Taskbar)
 fix: Many improvements in painting
 
-===============================================================================
+===============================================================================================
 
 == 1.5.4 general release:
 
@@ -259,7 +238,7 @@ fix: Some improvements in painting
 fix: Fixed some errors
 fix: Few small bugfixes and improvements 
 
-===============================================================================
+===============================================================================================
 
 == 1.5.3 general release:
 
@@ -271,7 +250,7 @@ del: "Show Text" property
 fix: Few small bugfixes and improvements
 fix: Improved support Aero 
 
-===============================================================================
+===============================================================================================
 
 == 1.5.2 general release:
 
@@ -279,7 +258,7 @@ add: Support Aero
 fix: Few small bugfixes and improvements
 !!!: Version 1.5.2 for Windows Vista and Windows 7 by the Home Premium and above 
 
-===============================================================================
+===============================================================================================
 
 == 1.5.1 general release:
 
@@ -288,7 +267,6 @@ add: "Autohide" property
 add: "Position" property
 fix: Few small bugfixes and improvements 
 
-===============================================================================
+===============================================================================================
 
 == 1.0.0 general release (Sep, 2010) - first public version:
-
